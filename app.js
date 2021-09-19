@@ -105,7 +105,7 @@ document.querySelector('#anime-form').addEventListener('submit', (e) => {
     Store.addAnime(anime);
 
     //Show Success Message
-    UI.showAlert('Book Added','success text-light');
+    UI.showAlert('Anime Added','success text-light');
 
     //clear Form Fields
 
@@ -122,5 +122,5 @@ document.querySelector('#anime-list').addEventListener('click', (e) => {
     Store.removeAnime(e.target.parentElement.previousElementSibling.previousElementSibling.textContent);
 
     //Show Warning Massege of Removed
-    UI.showAlert('Book Removed','warning text-dark');
+    UI.showAlert('Anime Removed','warning text-dark');
 });
